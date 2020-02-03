@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  }
+
+.masthead {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 15rem 1fr 4rem 4rem;
+    grid-template-rows: 4rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.logo {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+.imglogo{
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.imgmag {
+    height: 1.5rem;
+    margin-left: 3rem;
+}
+
+.search {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+input[type=text] {
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    padding: 10px 10px;
+    width: 300px;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.8);    
+    margin-right: 20rem;
+    margin-left: .5rem;    
+}
+  
+input[type=text]:hover, input[type=text]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+ 
+.search p {
+    color: grey;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+         
+button {
+    cursor: pointer;
+    background-color: #DD4C3B;
+    color: white;
+    min-width: 1.6rem;
+    height: 1.5rem;
+    margin-right:1rem;
+    border-radius: .3rem;
+    border:0;
+    font-weight: bold;
+}
+
+.email {
+    color: grey;
+    margin-right: 1rem;
+}
+
+.email:hover {
+    color: #DD4C3B;
+}
+
+
+.apps {
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.imgapps {
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+
+.menu {
+    grid-column: 4 / 5;
+    text-align: center;
+    background-color: #DD4C3B;
+}
+ 
+.imgmenu{
+    height: 4rem;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 15rem 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #292F32;
+    position: sticky;
+    width: 15rem;
+    top: 2rem;
+}
+
+.blue {
+    background-color: #0057E2;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+}
+
+.red {
+    background-color: #E02E29;
+    margin-left:3rem;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+}
+
+.yellow {
+    background-color: #FFA72E;
+    margin-left:7rem;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+}
+
+.green {
+    background-color: #008748;
+    margin-left:11rem;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+}
+
+.nav {
+    color: grey;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.nav h2 {
+    font-size: .6rem;
+    margin-bottom: .8rem;
+}
+
+.nav h3 {
+    font-size: 1.1rem;
+}
+
+li {
+    list-style-type: none;
+    margin-top: .8rem;
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+    }
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: blue;
+}
+
+.results {
+    margin-left: 2rem;
+    letter-spacing: 0;
+    color: grey;
+    font-size: .8rem;
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.results em {
+    font-style: normal;
+    color: white;
+}
+
+.red-bar {
+    background-color: #E02E29; 
+    width: 15rem;
+    bottom: 0;
+    width: 15rem;
+    height: .4rem;
+    position: absolute;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem 1rem 3rem 3rem;
+    }
+
+h1, h3 {
+    font-weight: normal;
+    color: #43464B;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: .5rem;
+
+}
+
+article {
+    margin-bottom: 1.5rem;
+}
+
+.articles a {
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #98C2F7;;
+    margin-bottom: .1rem;
+}
+
+article p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+article p em {
+    color: grey;
+}
+
+section {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    padding: 1rem 3.5rem 3rem 3rem ;
+}
+
+section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:250px;
+    width:500px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:500px;
+}
